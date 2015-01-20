@@ -45,6 +45,12 @@ module.exports = function(grunt) {
           dev: 'this is global'
         }
       },
+      partials: {
+        options: {
+            src: 'test/fixtures/partial',
+            dist: 'tmp'
+        }
+      }
     },
 
     // Unit tests.

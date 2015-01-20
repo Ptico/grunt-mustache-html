@@ -43,6 +43,15 @@ exports.mustache_html = {
     var expected = grunt.file.read('test/expected/custom.html');
     test.equal(actual, expected, 'page created.');
 
-    test.done();;
+    test.done();
+  },
+  partials: function(test) {
+    test.expect(1);
+
+    var actual = grunt.file.read('tmp/partial.html');
+    var expected = grunt.file.read('test/expected/partial.html');
+    test.equal(actual, expected, 'page created.');
+
+    test.done();
   }
 };
